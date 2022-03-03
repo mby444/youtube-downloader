@@ -45,6 +45,6 @@ app.use("/", (req, res) => {
     res.send("<h1 style='text-align: center;'>404 Not Found</h1>");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server running at port ${port}...`)
 });
