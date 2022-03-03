@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>YouTube Downloader</h1>
+    <form action="/" method="get">
+        <label for="url" id="url-label">Youtube video url</label>
+        <input type="url" name="url" id="url" required>
+        <input type="submit" value="Download" id="btn">
+    </form>
+    <div class="content-container">
+        <% if (ready) { %>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/<%= vidId %>" frameborder="0"></iframe>
+            </div>
+            <div class="list">
+                <% videos.forEach((video, i) => { %>
+                    <a href="<%= video.url %>" class="option" download><%= `${video.mimeType.split(";")[0]} (${video.qualityLabel})` %></a>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

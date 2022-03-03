@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "author": "MBY444",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "npm": "^8.5.2",
+    "ytdl-core": "^4.10.1"
+  }
+}

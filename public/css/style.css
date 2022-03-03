@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    margin: 15px 0;
+    font-family: 'Teko', sans-serif;
+}
+form {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    background-color: rgb(224, 224, 199);
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+#url-label {
+    font-family: 'Teko', sans-serif;
+}
+#url-label, #url {
+    margin: 5px 10px;
+}
+#url {
+    width: 50%;
+    padding: 2px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+#btn {
+    padding: 4px 8px;
+    cursor: pointer;
+    background: #36d136;
+    color: #fff;
+    border: none;
+    font-family: 'Teko', sans-serif;
+}
+
+/* Main content */
+.content-container {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+.iframe-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 5px 0;
+}
+iframe {
+    width: 80%;
+    max-width: 600px;
+    height: 250px;
+}
+.list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0;
+}
+.option {
+    display: block;
+    padding: 10px 45px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #3661a1;
+}
+.loader {
+    text-align: center;
+    color: rgb(133, 133, 133);
+}
+@media screen and (min-width: 768px) {
+    iframe {
+        width: 75%;
+        height: 350px;
+    }
+}
