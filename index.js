@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
     } catch(err){
         res.render("errors/error", {
             title: "URL Not Found",
-           errMsg: `URL "${vidUrl}" not found` 
+           errMsg: err 
         });
     }
 });
